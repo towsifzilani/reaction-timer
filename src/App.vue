@@ -25,6 +25,7 @@ export default {
     start() {
       this.isPlaying = true
       this.delay = 2000 + Math.random() * 5000
+      this.showResults=false
     },
     endGame(reactionTime) {
       this.score = reactionTime

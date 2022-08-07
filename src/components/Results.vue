@@ -14,11 +14,21 @@
             }
         },
         mounted() {
-            if(this.score < 250) this.rank = 'Very Fast'
-            else if(this.score < 450) this.rank = 'Fast'
-            else if(this.score < 650) this.rank = 'Medium Fast'
-            else if(this.score < 850) this.rank = 'Slowly Clicked'
-            else this.rank = 'Very Slowly Clicked'
+            if(this.score < 250) {
+                this.rank = 'Very Fast'
+            }
+            else if(this.score < 450) {
+                this.rank = 'Fast'
+            }
+            else if(this.score < 650) {
+                this.rank = 'Medium Fast'
+            }
+            else if(this.score < 850) {
+                this.rank = 'Slowly Clicked'
+            }
+            else {
+                this.rank = 'Very Slowly Clicked'
+            }
         }
     }
 </script>
